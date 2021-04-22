@@ -14,24 +14,24 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-6">
-                    <form class="mt-5" id="form" action="form.html" method="GET">
+                    <form class="mt-5" id="form-target">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="nameInput" name="name" placeholder="Им'я">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Им'я">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="sirnameInput" name="sirname" placeholder="Прізвище">
+                            <input type="text" class="form-control" id="sirnameInput" placeholder="Прізвище">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="fatherName" name="fathername" placeholder="По батькові">
+                            <input type="text" class="form-control" id="fatherName" placeholder="По батькові">
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="send-date">Дата відправлення</label>
-                                <input type="text" name="senddate" class="form-control" id="send-date">
+                                <input type="text" class="form-control" id="send-date">
                             </div>
                             <div class="col">
                                 <label for="receiving-date">Дата прибуття</label>
-                                <input type="text" name="receivingdate" class="form-control" id="receiving-date">
+                                <input type="text" class="form-control" id="receiving-date">
                             </div>
                         </div>
                         <div class="row">
@@ -52,13 +52,13 @@
                         </div>
                         <div class="form-group mt-4">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="delivery" id="delivery">
+                                <input class="form-check-input" type="checkbox" id="delivery" checked>
                                 <label class="form-check-label" for="delivery">Доставка</label>
                             </div>
-                            <div class="radio-box show-form">
+                            <div class="radio-box">
                                 <div class="form-check mt-2">
                                     <input class="form-check-input" type="radio" name="radio-btn" id="address-delivery"
-                                        value="option1" checked>
+                                        value="option1">
                                     <label class="form-check-label" for="address-delivery">Адресна доставка</label>
                                 </div>
                                 <div class="form-check">
@@ -68,7 +68,13 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" id="btn-firstform" class="btn btn-primary">Розрахувати</button>
+                        <div class="row">
+                            <div class="col-6 mt-2 mb-4 ">
+                                <label for="distance">Всого до сплати</label>
+                                <input type="text" class="form-control" id="total-price">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Оформити замовлення</button>
                     </form>
                 </div>
             </div>

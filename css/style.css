@@ -1,0 +1,13 @@
+.show-form {
+    opacity: 0;
+    transition: .3s;
+    position: absolute;
+    transform: translateX(100%);
+}
+
+.show-form.showed {
+    opacity: 1;
+    transition: .3s;
+    position: relative;
+    transform: translateX(0);
+}
