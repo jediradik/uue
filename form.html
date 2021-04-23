@@ -24,16 +24,16 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ml-lg-5">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item ml-lg-5">
-                            <a class="nav-link" href="about.html">Actions</a>
+                            <a class="nav-link" href="#">Actions</a>
                         </li>
                         <li class="nav-item ml-lg-5">
-                            <a class="nav-link" href="about.html">Price</a>
+                            <a class="nav-link" href="#">Price</a>
                         </li>
                         <li class="nav-item ml-lg-5">
-                            <a class="nav-link" href="gallery.html">Contacts</a>
+                            <a class="nav-link" href="#">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -52,28 +52,28 @@
                 <div class="col-12 col-sm-10 col-md-6">
                     <form class="mt-5" id="form-target">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="nameInput" placeholder="Им'я">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Им'я" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="sirnameInput" placeholder="Прізвище">
+                            <input type="text" class="form-control" id="sirnameInput" placeholder="Прізвище" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="fatherName" placeholder="По батькові">
+                            <input type="text" class="form-control" id="fatherName" placeholder="По батькові" required>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <label for="send-date">Дата відправлення</label>
-                                <input type="date" class="form-control" id="send-date">
+                                <input type="date" class="form-control" id="send-date" required>
                             </div>
                             <div class="col-12 col-md-6">
                                 <label for="receiving-date">Дата прибуття</label>
-                                <input type="date" class="form-control" id="receiving-date">
+                                <input type="date" class="form-control" id="receiving-date" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6 mt-4">
                                 <label for="distance">Відстань, км</label>
-                                <input type="number" class="form-control" name="distance" id="distance">
+                                <input type="number" class="form-control" name="distance" id="distance" required>
                             </div>
                             <div class="col-12 col-md-6 mt-4">
                                 <label for="km-price">Вартість доставки</label>
@@ -83,7 +83,7 @@
                         <div class="row">
                             <div class="col-6 mt-4">
                                 <label for="km-price">Вартість за км (грн)</label>
-                                <input type="number" class="form-control" id="km-price" name="kmprice">
+                                <input type="number" class="form-control" id="km-price" name="kmprice" required>
                             </div>
                         </div>
                         <div class="form-group mt-4 position-relative">
