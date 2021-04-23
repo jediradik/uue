@@ -9,37 +9,72 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header py-4">
+        <div class="container p-sm-0">
+            <nav class="navbar p-0 navbar-expand-lg navbar-light">
+                <a class="navbar-brand dd-flex justify-content-center align-items-center" href="#">DELIVERY</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-lg-5 item-active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ml-lg-5">
+                      <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item ml-lg-5">
+                        <a class="nav-link" href="about.html">Actions</a>
+                    </li>
+                    <li class="nav-item ml-lg-5">
+                        <a class="nav-link" href="about.html">Price</a>
+                    </li>
+                    <li class="nav-item ml-lg-5">
+                        <a class="nav-link" href="gallery.html">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
     
-    <div class="form-wrapper">
+    <div class="form-wrapper mt-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
+                    <h1 class="form__title text-center">Заповніть поля</h1>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-10 col-md-6">
                     <form class="mt-5" id="form" action="form.html" method="GET">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="nameInput" name="name" placeholder="Им'я">
+                            <input type="text" class="form-control" id="nameInput" name="name" placeholder="Им'я" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="sirnameInput" name="sirname" placeholder="Прізвище">
+                            <input type="text" class="form-control" id="sirnameInput" name="sirname" placeholder="Прізвище" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="fatherName" name="fathername" placeholder="По батькові">
+                            <input type="text" class="form-control" id="fatherName" name="fathername" placeholder="По батькові" required>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12 col-md-6">
                                 <label for="send-date">Дата відправлення</label>
-                                <input type="text" name="senddate" class="form-control" id="send-date">
+                                <input type="text" name="senddate" class="form-control" id="send-date" required>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-md-6">
                                 <label for="receiving-date">Дата прибуття</label>
-                                <input type="text" name="receivingdate" class="form-control" id="receiving-date">
+                                <input type="text" name="receivingdate" class="form-control" id="receiving-date" required>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col mt-4">
+                            <div class="col-12 col-md-6 mt-4">
                                 <label for="distance">Відстань, км</label>
-                                <input type="text" class="form-control" name="distance" id="distance">
+                                <input type="text" class="form-control" name="distance" id="distance" required>
                             </div>
-                            <div class="col mt-4">
+                            <div class="col-12 col-md-6 mt-4">
                                 <label for="km-price">Вартість доставки</label>
                                 <input type="text" class="form-control" id="delivery-price" name="deliveryprice" value="40" disabled>
                             </div>
@@ -47,10 +82,10 @@
                         <div class="row">
                             <div class="col-6 mt-4">
                                 <label for="km-price">Вартість за км (грн)</label>
-                                <input type="text" class="form-control" id="km-price" name="kmprice">
+                                <input type="text" class="form-control" id="km-price" name="kmprice" required>
                             </div>
                         </div>
-                        <div class="form-group mt-4">
+                        <div class="form-group mt-4 position-relative form-overflow">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="delivery" id="delivery">
                                 <label class="form-check-label" for="delivery">Доставка</label>
@@ -74,6 +109,16 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="footer__title text-center">FOOTER</div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

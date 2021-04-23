@@ -1,3 +1,7 @@
+.radio-box {
+    overflow: hidden;
+}
+
 .show-form {
     opacity: 0;
     transition: .3s;
@@ -10,4 +14,50 @@
     transition: .3s;
     position: relative;
     transform: translateX(0);
+}
+
+.header {
+    background-color: #F8F9FA;
+}
+
+.header .nav-link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.header .nav-item.item-active a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.header .nav-item .nav-link:hover {
+    color: #070707;
+}
+
+.form-overflow {
+    overflow: hidden;
+}
+
+
+.footer {
+    background-color: #272822;
+    padding: 100px 0;
+}
+
+.footer__title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
 }
